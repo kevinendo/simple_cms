@@ -1,0 +1,15 @@
+<%= link_to("<< Back to List", {:action => 'list'}, :class => 'back-link')%>
+
+<div class="subject edit">
+<h2>Edit Subject</h2>
+<%= form_for(:subject, :url => {:action => 'update', :id => @subject.id}) do |f| %>
+<p>Name: <%= f.text_field(:name) %></p>
+
+<p>Position: <%= f.text_field(:position) %></p>
+
+<p>Visible: <%= f.text_field(:visible) %></p>
+
+<%= submit_tag("Save Subject")%>
+
+<% end %>
+</div>

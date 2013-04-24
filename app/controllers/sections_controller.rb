@@ -1,0 +1,2 @@
+class SectionsControllerController < ApplicationController
+end
